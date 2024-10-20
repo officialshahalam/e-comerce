@@ -35,7 +35,7 @@ function Home() {
             )
             :
             (
-                <div className='w-10/12 max-w-[1080px] mx-auto grid grid-cols-4 gap-x-4 gap-y-10 mt-[5rem]'>
+                <div className='w-10/12 max-w-[1080px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 mt-[5rem]'>
                     {
                         posts.map((post)=>(
                             <ProductItem key={post.id} post={post}/>

@@ -15,13 +15,13 @@ function CartItem({post}) {
     }
 
   return (
-    <div className='flex w-[600px] border-b-2 border-gray-500 justify-between items-center gap-4 pb-4'>
+    <div className='flex w-full lg:w-[600px] border-b-2 border-gray-500 justify-between items-center gap-4 pb-4'>
         <div>
-            <img src={post.image} className='h-[220px]'/>
+            <img src={post.image} className='h-[150px] lg:h-[220px]'/>
         </div>
-        <div className='w-[350px] space-y-5'>
-            <h1 className='text-lg font-bold'>{post.title}</h1>
-            <p className='text-sm'>{post.description}</p>
+        <div className='w-[280px] lg:w-[350px] space-y-2 lg:space-y-5'>
+            <h1 className='text-base lg:text-lg font-bold'>{post.title}</h1>
+            <p className='text-xs lg:text-sm'>{post.description}</p>
             <div className='flex w-full justify-between'>
                 <span className='text-lg font-extrabold text-green-500'>${post.price}</span>
                 <button 

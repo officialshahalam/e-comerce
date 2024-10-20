@@ -18,15 +18,15 @@ function Cart() {
       {
         cart.length>0?
         (
-          <div className='flex justify-between'>
-            <div className='flex flex-col gap-4'>
+          <div className='flex w-full flex-col gap-[80px] lg:gap-0 lg:flex-row justify-between'>
+            <div className='flex flex-col w-full gap-4'>
               {
                 cart.map((post)=>{
                   return <CartItem key={post.id} post={post}/>
                 })  
               }
             </div>
-            <div className='flex flex-col justify-between w-[400px]'>
+            <div className='flex flex-col justify-between w-full lg:w-[400px]'>
               <div>
                 <h1 className='text-xl font-bold text-green-700'>Your Cart</h1>
                 <p className='text-[3rem] font-semibold text-green-600'>Summary</p>
