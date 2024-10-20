@@ -11,7 +11,7 @@ function Navbar() {
     <div className='w-screen bg-slate-900'>
         <nav className='w-10/12 max-w-[1080px] mx-auto flex text-white justify-between items-center py-3'>
             <NavLink to="/">
-                <img src="../src/assets/logo.png" className='h-14'/>
+                <img src="../public/assets/logo.png" className='h-14'/>
             </NavLink>
             <div className='flex items-center gap-4 justify-end'>
                 <NavLink to="/cart">
